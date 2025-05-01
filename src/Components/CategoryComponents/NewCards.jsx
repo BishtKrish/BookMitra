@@ -11,7 +11,7 @@ const NewCards = () => {
     useEffect(()=>{
         const getBook = async()=>{
             try {
-                const res = await axios.get("http://localhost:4001/Book_Store")
+                const res = await axios.get("https://bookmitra-backend.onrender.com/Book_Store")
                 setbook(res.data)
             } catch (error) {
                 console.log("Error: ",error)

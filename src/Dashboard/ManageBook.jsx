@@ -9,7 +9,7 @@ const ManageBook = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const books = await fetch('http://localhost:4001/Book_Store')
+        const books = await fetch('https://bookmitra-backend.onrender.com/Book_Store')
         const data = await books.json()
         setallBooks(data)
       } catch (error) {
@@ -21,7 +21,7 @@ const ManageBook = () => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:4001/book/${id}`, { method: 'DELETE' });
+      const response = await fetch(`https://bookmitra-backend.onrender.com/book/${id}`, { method: 'DELETE' });
 
       if (!response.ok) {
         throw new Error('Failed to delete book');

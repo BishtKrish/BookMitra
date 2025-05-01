@@ -30,7 +30,7 @@ const UploadBook = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:4001/book', {
+      const response = await fetch('https://bookmitra-backend.onrender.com/book', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(bookObj)

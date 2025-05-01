@@ -32,7 +32,7 @@ const EditBook = () => {
     const bookObj = { title, category, price, disc, img };
 
     try {
-      const response = await fetch(`http://localhost:4001/book/${id}`, {
+      const response = await fetch(`https://bookmitra-backend.onrender.com/book/${id}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(bookObj),

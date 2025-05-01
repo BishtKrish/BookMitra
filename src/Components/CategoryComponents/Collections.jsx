@@ -11,7 +11,7 @@ const Collections = () => {
   useEffect(() => {
     const getBooks = async () => {
       try {
-        const response = await axios.get("http://localhost:4001/Book_Store");
+        const response = await axios.get("https://bookmitra-backend.onrender.com/Book_Store");
         setBooks(response.data);
       } catch (error) {
         console.log("Error: ", error);

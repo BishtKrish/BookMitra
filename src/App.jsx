@@ -52,7 +52,7 @@ const router = createBrowserRouter([
   {
     path: '/bookdetail/:id',
     element: <BookDetail />,
-    loader: ({ params }) => fetch(`http://localhost:4001/book/${params.id}`),
+    loader: ({ params }) => fetch(`https://bookmitra-backend.onrender.com/book/${params.id}`),
   },
   {
     path: '/signup',
@@ -86,7 +86,7 @@ const router = createBrowserRouter([
       {
         path: 'editbook/:id',
         element: <EditBook />,
-        loader: ({ params }) => fetch(`http://localhost:4001/book/${params.id}`),
+        loader: ({ params }) => fetch(`https://bookmitra-backend.onrender.com/book/${params.id}`),
       },
          
     ],

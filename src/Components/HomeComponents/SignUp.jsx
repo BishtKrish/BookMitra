@@ -26,7 +26,7 @@ const SignUp = () => {
             email: data.email,
             password: data.password
         }
-        await axios.post("http://localhost:4001/user/signup", userInfo)
+        await axios.post("https://bookmitra-backend.onrender.com/user/signup", userInfo)
             .then((res) => {
                 console.log(data)
                 if (res.data) {

@@ -11,7 +11,7 @@ const Banner = () => {
   useEffect(() => {
     const getBooks = async () => {
       try {
-        const res = await axios.get("http://localhost:4001/Book_Store");
+        const res = await axios.get("https://bookmitra-backend.onrender.com/Book_Store");
         setBooks(res.data);
       } catch (error) {
         console.log("Error fetching books:", error);
