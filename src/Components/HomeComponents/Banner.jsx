@@ -57,7 +57,7 @@ const Banner = () => {
                 placeholder="Search a book here"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-              />
+              />  
             </div>
             <div className="indicator border-none">
               <button

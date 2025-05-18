@@ -1,5 +1,3 @@
-import React from 'react'
-// import { Link } from 'react-router-dom'
 import Login from "../HomeComponents/Login.jsx"
 import { useForm } from "react-hook-form"
 import axios from 'axios'
